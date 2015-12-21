@@ -12,7 +12,7 @@
 Summary: a compatible Threading API for PHP5.3+
 Name: %{php_base}-pecl-pthreads
 Version: 3.1.5
-Release: 1.vortex%{?dist}
+Release: 2.vortex%{?dist}
 License: PHP
 Group: Development/Languages
 Vendor: Vortex RPM
@@ -89,6 +89,9 @@ fi
 
 
 %changelog
+* Mon Dec 21 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 3.1.5-2.vortex
+- 7.0.1.
+
 * Sat Dec 12 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 3.1.5-1.vortex
 - Update to 3.1.5.
 
