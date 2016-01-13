@@ -12,7 +12,7 @@
 Summary: a compatible Threading API for PHP5.3+
 Name: %{php_base}-pecl-pthreads
 Version: 3.1.5
-Release: 3.vortex%{?dist}
+Release: 2.vortex%{?dist}
 License: PHP
 Group: Development/Languages
 Vendor: Vortex RPM
@@ -50,7 +50,7 @@ phpize
 %install
 cd %{pecl_name}-%{version}
 %{__rm} -rf %{buildroot}
-%{__make} install INSTALL_ROOT=%{buildroot} --enable-pthreads=shared
+%{__make} install INSTALL_ROOT=%{buildroot}
 
 # Drop in the bit of configuration
 %{__mkdir_p} %{buildroot}%{_sysconfdir}/php.d
@@ -89,9 +89,6 @@ fi
 
 
 %changelog
-* Fri Dec 25 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 3.1.5-3.vortex
-- Shared build.
-
 * Mon Dec 21 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 3.1.5-2.vortex
 - 7.0.1.
 
